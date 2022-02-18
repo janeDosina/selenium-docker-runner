@@ -33,8 +33,8 @@ services:
       - HUB_HOST=hub
       - BROWSER=firefox
       - MODULE=search-module.xml
-    volumes:
-      - ./test-search-result:/usr/share/udemy/test-output
+    # volumes:
+    #   - ./test-search-result:/usr/share/udemy/test-output
   book-flight-module:
     image: janeuniqacc/selenium-docker
     depends_on:
@@ -44,5 +44,5 @@ services:
       - HUB_HOST=hub
       - BROWSER=chrome
       - MODULE=book-flight-module.xml
-    volumes:
-      - ./test-book-result:/usr/share/udemy/test-output
+    # volumes:
+    #   - ./test-book-result:/usr/share/udemy/test-output
